@@ -74,49 +74,46 @@ main {
     margin-left: $fixedWidth;
     background-color: $red;
 
-    .movie__movie {
+    .movie__column {
         width: 100%;
-        padding: 200px 170px 220px 170px;
+        padding: 120px 90px;
         background-color: #e7473c;
         background-image: linear-gradient(180deg, #e7473c 0%, #901818 74%);
 
-        .movie__column {
-            width: 100%;
-            height: 0;
-            padding-bottom: 56.25%;
-            position: relative;
+        .movie__header {
+            color: $white;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
 
-
-            iframe {
-                position: absolute;
-                left: 0;
-                top: 50px;
-                width: 100%;
-                height: 100%;
+            h4 {
+                font-size: 32px;
+                text-transform: uppercase;
             }
 
-            .movie__header {
-                color: $white;
-                display: flex;
-                justify-content: space-between;
-                align-items: flex-end;
-
-                h4 {
-                    // position: absolute;
-                    // left: 0;
-                    // top: -20px;
-                    font-size: 32px;
-                    text-transform: uppercase;
-                }
-
-                h5 {
-                    // position: absolute;
-                    // right: 0;
-                    // top: -20px;
-                    letter-spacing: 2px;
-                }
+            h5 {
+                letter-spacing: 2px;
             }
         }
 
+        .video-container {
+            width: auto;
+            margin: 20px auto;
+
+            .video-ratio {
+                width: 100%;
+                height: 0;
+                padding-bottom: 56.25%;
+                position: relative;
+
+                iframe {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
     }
 }
