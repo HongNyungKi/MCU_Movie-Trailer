@@ -77,8 +77,12 @@ main {
     .movie__column {
         width: 100%;
         padding: 120px 90px;
-        background-color: #e7473c;
-        background-image: linear-gradient(180deg, #e7473c 0%, #901818 74%);
+        background-color: #9e312a;
+        background-image: linear-gradient(180deg, #9e312a 0%, #e7473c 36%, #c65151 100%);
+
+
+
+
 
         .movie__header {
             color: $white;
@@ -99,6 +103,11 @@ main {
         .video-container {
             width: auto;
             margin: 20px auto;
+            box-shadow:
+                0 7.1px 9.9px -1px rgba(0, 0, 0, 0.215),
+                0 57px 79px -1px rgba(0, 0, 0, 0.43);
+
+
 
             .video-ratio {
                 width: 100%;
